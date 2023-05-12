@@ -77,3 +77,9 @@ torchrun --nproc_per_node 4 main.py
 
 You need to change the number behind the `-nproc_per_node` to your number of GPUs
 
+
+## We ran and evaluated the code of the IELT model on their cub dataset
+We have trained the model on cub dataset. We uploaded a downloaded version of the dataset as the download function in the code isn't working properly, it's throwing ambiguous errors. While training the model on a particular dataset it is important to remember that we need to change the directory path for the dataset in both the 'base.yaml' and the respective 'datset.yaml' file(in this case cub.yaml).
+The following image shows the performance on the cub dataset:
+
+![WhatsApp Image 2023-05-11 at 9 02 54 PM](https://github.com/kabilanmohanraj/ml-herbarium/assets/62757336/8860936a-d505-40e4-80c4-df40af1e3c76)
